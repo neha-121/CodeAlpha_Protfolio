@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #4632a1;
+  color: white;
+  padding: 20px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 5em;
+  font-weight: bold;
+  align-items: center;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  display: inline;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #ff69b4;
+}
+
+/* Hero Section */
+
+.hero-text {
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+
+.hero-text h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero-text .subtext {
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+.cta-button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ff85d0;
+}
+
+.hero-image img {
+     width: 30%;  /* Limits the image size to 80% of its container */
+      height: 30%;    /* Keeps the image proportionate */
+      border-radius: 15px;
+  
+  }
+  
+
+
+/* Skills Section */
+.skills {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skill-card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 30%;
+}
+
+.skill-card h3 {
+  font-size: 1.5em;
+  color: #4632a1;
+}
+
+.skill-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4632a1;
+  padding: 50px 0;
+  color: white;
+  text-align: left;
+  flex-direction: row; /* Ensures the image stays on the right */
+}
+
+.hero-text {
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+
+.hero-image {
+  flex-basis: 50%; /* Makes the image container take up half of the space */
+  display: flex;
+  justify-content: flex-end; /* Aligns the image to the right inside the container */
+}
+
+.hero-image img {
+  width: 30%;  /* Adjusts image size */
+  height: auto;  /* Keeps aspect ratio */
+  border-radius: 15px;
+}
