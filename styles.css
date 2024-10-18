@@ -1,154 +1,116 @@
-/* General Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* Header */
 header {
-  background-color: #4632a1;
-  color: white;
-  padding: 20px 0;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
 }
 
-header .logo {
-  font-size: 5em;
-  font-weight: bold;
-  align-items: center;
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
-header ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+main {
+    margin: 20px 0;
 }
 
-header ul li {
-  display: inline;
+article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-header ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+h2, h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
-header ul li a:hover {
-  color: #ff69b4;
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
 }
 
-/* Hero Section */
-
-.hero-text {
-  flex-basis: 50%;
-  padding-right: 20px;
+.portfolio-image1, .portfolio-image2 {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.portfolio-image2{
+    height: 50%;
 }
 
-.hero-text h2 {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.hero-text .subtext {
-  margin: 20px 0;
-  font-size: 1.1em;
-}
-
-.cta-button {
-  background-color: #ff69b4;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background-color: #ff85d0;
-}
-
-.hero-image img {
-     width: 30%;  /* Limits the image size to 80% of its container */
-      height: 30%;    /* Keeps the image proportionate */
-      border-radius: 15px;
-  
-  }
-  
-
-
-/* Skills Section */
-.skills {
-  background-color: #f5f5f5;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.skill-card {
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  width: 30%;
-}
-
-.skill-card h3 {
-  font-size: 1.5em;
-  color: #4632a1;
-}
-
-.skill-card p {
-  font-size: 1em;
-  color: #666;
-}
-
-/* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #4632a1;
-  padding: 50px 0;
-  color: white;
-  text-align: left;
-  flex-direction: row; /* Ensures the image stays on the right */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
 }
 
-.hero-text {
-  flex-basis: 50%;
-  padding-right: 20px;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.hero-image {
-  flex-basis: 50%; /* Makes the image container take up half of the space */
-  display: flex;
-  justify-content: flex-end; /* Aligns the image to the right inside the container */
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
 }
 
-.hero-image img {
-  width: 30%;  /* Adjusts image size */
-  height: auto;  /* Keeps aspect ratio */
-  border-radius: 15px;
+header.dark-mode {
+    background-color: #555;
+}
+
+footer.dark-mode {
+    background-color: #555;
+}
+
+article.dark-mode {
+    background-color: #333;
+    color: #eee;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
